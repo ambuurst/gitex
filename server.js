@@ -6,9 +6,9 @@ application.get('*', (request, respons, next) => {
     next();
 });
 
-
-application.listen(8080, ()=> {
-    console.log('Hier is poort ' + 8080)
+const port = 8080;
+application.listen(port, ()=> {
+    console.log('Hier is poort ' + port)
 
 });
 
