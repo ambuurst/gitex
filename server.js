@@ -9,11 +9,12 @@ application.all('*', (request, respons, next) => {
 application.get('/hello', (request, respons, next) =>
 {
     respons.status(200).json({
-        'msg': 'Hello JEDI\'s'
+        'msg': 'Jason vieze faggot'
     });
 });
 
 const port = process.env.PORT;
+
 application.listen(port, ()=> {
     console.log('Hier is poort ' + port)
 
