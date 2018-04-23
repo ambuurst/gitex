@@ -13,7 +13,7 @@ application.get('/hello', (request, respons, next) =>
     });
 });
 
-const port = 8080;
+const port = process.env.PORT;
 application.listen(port, ()=> {
     console.log('Hier is poort ' + port)
 
